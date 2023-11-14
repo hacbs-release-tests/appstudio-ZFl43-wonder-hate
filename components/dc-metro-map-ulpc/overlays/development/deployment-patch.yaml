@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-ulpc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/release-e2e-pyxis-tenant/appstudio/dc-metro-map-ulpc@sha256:267dba9c08ba8fe53000eb4feef0c1054107436c057437585e32519789a38a3c
+        name: my-nodejs
+        resources: {}
+status: {}
